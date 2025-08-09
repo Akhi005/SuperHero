@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import SearchBar from "@/components/SearchBar";
-import Sort from "@/components/Dropdown";
+import Sort from "@/components/Sort";
 import Pagination from "@/components/Pagination";
 import Card from "@/components/Card";
 import { Spinner } from "@/components/Spinner";
@@ -13,7 +13,7 @@ export default function Home() {
   const [page, setPage] = useState(1);
   const [perPage, setPerPage] = useState(5);
   const [search, setSearch] = useState("");
-  const [sort, setSort] = useState("name");
+  const [sort, setSort] = useState("created");
   const [totalPages, setTotalPages] = useState(1);
   const [loading, setLoading] = useState(false);
   const [matchType, setMatchType] = useState("partial");
